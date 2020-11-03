@@ -1,2 +1,2 @@
 # Tainan
-still thinking
+My midterm work.
