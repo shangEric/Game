@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="themes/tainan.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    .ui-body-c,
+    .ui-header {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .ui-footer {
+        font-family: 'Pacifico', cursive;
+    }
+
+    #map {
+        text-align: center;
+    }
+
+    .picture img {
+        max-width: 100%;
+        border-radius: 5%;
+    }
+
+    #picture img {
+        max-width: 100%;
+        border-radius: 5%;
+    }
+
+    #picture {
+        text-align: center;
+    }
+
+    .food h2 {
+        text-align: center;
+    }
+
+    .food p {
+        text-align: center;
+    }
+
+    #hotel h3 {
+        text-align: center;
+    }
+
+    .link {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div data-role="page" id="intro">
+        <div data-role="header">
+            <h1>古都之旅</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p>
+                臺南市是臺灣的發祥地，是全臺歷史最悠久的都市，除了歷史文化特色之外，
+                臺南更擁有如詩畫般的自然生態美景，及聞名遐邇的農漁產品特色美食。這般
+                的臺南之美，美得有如活生生的歷史博物館，美在那一望無垠的田園風光，美
+                在淳樸及熱情的人心，值得您細細品味。
+            </p>
+            <div id="map">
+                <h2>Google Map</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58764.917682655825!2d120.20476936478424!3d22.994110485296453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e768cf38caa09%3A0xc3e9a28e4fd2ac46!2z5Y-w5Y2X6LuK56uZ!5e0!3m2!1szh-TW!2stw!4v1592023852445!5m2!1szh-TW!2stw"
+                    width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+            </div>
+            <p>　</p>
+            <div role="list" data-role="listview">
+                <li>
+                    <a href="#history" data-transition="slide">台南的歷史小教室
+                        <p>全市文化古蹟遍布，多元文化並存</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#oldbuilding" data-transition="slide">台南的古蹟介紹
+                        <p>歷經時代變遷的老建築們</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#food" data-transition="slide">台南必吃9大美食
+                        <p>多元化、具有在地特色的小吃</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nature" data-transition="slide">台南的自然風光
+                        <p>有著如詩畫般的自然生態美景</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#hotel" data-transition="slide">台南的住宿資訊
+                        <p>飯店推薦與附近的公共運輸</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutus" data-transition="slide">關於我
+                        <p>一些關於作者的小小資訊</p>
+                    </a>
+                </li>
+            </div>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Eric@DCAM</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" id="history">
+        <div data-role="header">
+            <a href="#intro" data-transition="fade"
+                class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>台南的歷史小教室</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="picture">
+                <img src="img/Tainan/map.jpg" alt="">
+            </div>
+            <p>
+                臺南市歷史，早在15世紀的航海時代以前，台南市就是台灣較早期的有人聚落，此時有東南沿海的海賊在台灣出沒。荷蘭東印度公司前來與東亞進行貿易時，因為明朝佔有澎湖，根據自身貿易的需要，轉而往鄰近的台灣尋找東亞的貿易基地。荷蘭人來到適宜設置港口的台江內海（今台南市區）後，找到了一些漢人漁民在此地建立的聚落，便在1624年設立了台灣第一個城鎮。此後經過鄭成功與清朝的發展，二百餘年來臺南一直是全臺首邑。事實上，「臺灣」一名本即為臺南安平之舊稱，稍後方擴大為全島之名。另外在臺南亦有發現數處史前文化，為臺灣已知最早人類居住地之一。
+            </p>
+            <h2>荷治時期</h2>
+            <p>
+                近代台南最早是出現在1617年的航海紀錄中，當時西班牙船員描述此處為「漢人與盜賊」的一處聚落點，1624年，原佔領澎湖的荷蘭人和明軍簽約，放棄其在澎湖的經營，轉而登陸台灣南部，正式建立了一個貿易城鎮，首先興築商館並拓展其規模成為西式水岸堡壘，此即為台江西岸的一鯤鯓沙洲上的「熱蘭遮城」（今安平古堡），做為在台的統治中心。接著又在城堡東方，分別興建了「台灣街」（於今延平街一帶）和「普羅民遮街」（今民權路）。前者因為歷史久遠，又曾是一條繁盛的商業街，故素有「台灣第一街」之稱。至於後者，則是台灣第一條有計畫興建的歐式街道。
+            </p>
+            <h2>明鄭時期</h2>
+            <p>
+                1661年4月，鄭成功在任職荷蘭通事之漢人何斌的引導下，通過鹿耳門港道，越渡台江內海，首先攻下普羅民遮城。之後，鄭氏立刻改普羅民遮城為東都明京，設承天府，並頒布諭告：「東都明京，開國立家，可為萬世不拔基業」，設一府二縣。在東都暫住9個月以後，鄭成功終於攻下「熱蘭遮城」，結束了荷蘭在台灣38年的統治歲月。荷蘭人投降以後，鄭成功改熱蘭遮城為安平鎮，做為鄭氏府第；已改名為東都承天府的普羅民遮城，則是做為全島最高行政機構。然而不到半年，鄭成功即因病逝世。世子鄭經即位之後不久，在1664年廢東都。在明京裁廢後，赤崁樓便成為儲藏火藥的場所。
+            </p>
+            <h2>臺灣民主國時期</h2>
+            <p>
+                1895年4月，《馬關條約》簽訂，臺灣、澎湖割予日本。5月，臺灣巡撫唐景崧發布「臺灣民主國獨立宣言」，共和國政體的臺灣民主國在臺北成立。6月，義勇軍在臺南擁立原大將軍劉永福為第二任大總統，以臺南為都，設總統府於大天后宮。學者將劉永福在台南所建的政權稱之為「台南共和」（Tainan
+                Republic 或「第二共和」（Second Republic）。10月下旬兵敗陷落。
+            </p>
+            <h2>日治時期</h2>
+            <p>
+                臺灣民主國抗日失敗後，臺南士紳推舉英國牧師巴克禮於1895年10月20日會見日軍，翌晨引領入城、日治時期開始。在日本人施政下，1900年11月29日臺南＝打狗間鐵道開通，設停車場（即車站）於城內西側空地。臺南廳舍（後改為州廳）、地方法院等公家機關相繼成立。稍後的市區改正、臺南新運河開通、臺南驛改建，使臺南逐漸有了現代化都市的雛形。
+            </p>
+            <p>
+                臺南市直至1930年代，仍為僅次於臺北市的第二大城市。但由於昔日賴以繁榮的海運優勢不再，在臺灣南部的工商樞紐地位逐漸被具有優良港口的新興城市高雄市所取代。1940年，由於高雄市與臨近地區合併、面積與人口大增，臺南市在人口方面落居第三大城。
+                Republic 或「第二共和」（Second Republic）。10月下旬兵敗陷落。
+            </p>
+            <p>　</p>
+            <div role="list" data-role="listview">
+                <li>
+                    <a href="#oldbuilding" data-transition="slide">台南的古蹟介紹
+                        <p>歷經時代變遷的老建築們</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#food" data-transition="slide">台南必吃9大美食
+                        <p>多元化、具有在地特色的小吃</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nature" data-transition="slide">台南的自然風光
+                        <p>有著如詩畫般的自然生態美景</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#hotel" data-transition="slide">台南的住宿資訊
+                        <p>飯店推薦與附近的公共運輸</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutus" data-transition="slide">關於我
+                        <p>一些關於作者的小小資訊</p>
+                    </a>
+                </li>
+            </div>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Eric@DCAM</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" id="oldbuilding">
+        <div data-role="header">
+            <a href="#intro" data-transition="fade"
+                class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>台南的古蹟介紹</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                    <h3>延平郡王祠</h3>
+                    <p>明永曆16年（1662年），鄭成功逝。地方百姓勉其驅荷開台功績、忠貞亮節情操，因此於此地建廟奉祀，為「開臺聖王廟」，即「延平郡王祠」前身。爾後至1874年，才由沈葆楨奏請清廷追諡建祠，並於1875年竣工，定名「延平郡王祠」。日本統治台灣時期，更將鄭成功神化，列為「開山神社」，為日治時期府城最早的神社，也是台灣各神社當中，唯一奉祀漢人神明。直至台灣光復後舊廟新建，重建為中國北方宮殿式樣，成為全台唯一由官方興建紀念鄭成功專祠。
+                    </p>
+                    <div id="picture">
+                        <img src="img/oldbuildings/01.jpg" alt="">
+                    </div>
+                    <p>地址: 700台南市中西區開山路152號</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>台南孔廟</h3>
+                    <p>孔廟，為明鄭時期的鄭經參軍陳永華為興國學，乃提倡興建，開啟台灣儒學先學之聲，為台灣官辦最高學府，故稱「全台首學」。殿中更是懸掛康熙御筆「萬世師表」，保存中國古風。以孔廟為中心延伸的文化園區，綠蔭、紅牆、人文、藝術和美食等，構成了此區最重要的元素。來台南旅遊慢活自在的氣息，一種和喧囂都市有著截然不同的生活體驗。走進此區，生活的精彩，其實隨手可得。無論在任何時來此旅遊，情不自禁的都被它自然簡樸和清新開闊的氛圍所吸引，並非因為孔廟有著濃厚的宗教性色彩，乃是因為歲月時空的累積醞釀，在這兒營造出獨具氛圍的歷史感以及靜謐的氣氛。空間、時間和環境，一切都是那麼的怡然自得。
+                    </p>
+                    <div id="picture">
+                        <img src="img/oldbuildings/02.jpg" alt="">
+                    </div>
+                    <P>地址: 700台南市中西區南門路2號</P>
+                </div>
+                <div data-role="collapsible">
+                    <h3>赤崁樓</h3>
+                    <p>西元1652年，荷蘭人平定郭懷一之亂以後，決心要修建城堡。隔年，用糖水糯汁蜃蚵灰疊砌紅磚城垣，城牆非常堅固，以防止再次發生民變，這座普羅民遮城〈provintia〉也成為荷蘭人的政治商業中心，又因為當地稱為赤崁，呼荷蘭人為紅毛人，所以俗稱赤崁樓或是紅毛城。西元1661年，鄭成功迂迴襲擊荷蘭，取下普羅民遮城後，設置為承天府，為明鄭最高行政機構，因為結構穩固，也當作火藥庫使用，直到清朝仍然以火藥庫使用，中間經歷過地震、拆毀，陸續築大士殿、建海神廟、加建蓬壺書院、文昌閣及五子祠，成為一座集合了廟、閣、院、殿、祠的建築群。日本時代曾經一度淪為軍醫院，大正七年〈西元1918年〉醫院遷離，赤崁樓改為日語學校，昭和十年〈西元1935年〉，赤崁樓被日本人指定為古蹟，民國71年〈西元1982年〉列為一級古蹟至今。
+                    </p>
+                    <div id="picture"><img src="img/oldbuildings/03.jpg" alt=""></div>
+                    <P>地址: 700台南市中西區民族路二段212號</P>
+                </div>
+                <div data-role="collapsible">
+                    <h3>安平古堡</h3>
+                    <p>荷蘭人於西元1624年，在安平建造了臺灣第一座城堡「熱蘭遮城」，也就是現在的安平古堡，這裡曾是荷蘭人統治的中樞，更是對外貿易的總樞紐，原本的建築格局分為方形內城與長方形外城。西元1661年，鄭成功驅離荷蘭人後，將此地改名為安平，故熱蘭遮城也稱為「王城」或「臺灣城」，俗稱安平古堡，是臺灣最早的一座城池。清康熙年間，正式將臺灣納入版圖，政治中心移至府城內，進而逐漸喪失其價值。後來曾破壞城壁紅磚挪為建造億載金城之用，到了日治時期，內城荷式建築全毀，四周以紅磚砌成方形階臺，臺上建造西式平房作為海關宿舍。而成為今日的紀念館風貌，光復後改名為安平古堡，目前紀念館邊殘存七十多公尺長的外城南牆殘壁依然屹立，老榕攀爬，紅磚班駁，是300餘年來僅存的歷史遺跡，訴說著曾經過往的滄桑。
+                    </p>
+                    <div id="picture"><img src="img/oldbuildings/04.jpg" alt=""></div>
+                    <P>地址: 708台南市安平區國勝路82號</P>
+                </div>
+                <div data-role="collapsible">
+                    <h3>鹿耳門天后宮</h3>
+                    <p>西元1661年，延平郡王鄭成功率領戰船、將士，到達鹿耳門外海。但因為水位太淺，大船無法進港，便在船頭設香案禱告蒼天，當時艦上有一尊隨艦媽祖，蒙媽祖庇佑，瞬間潮水驟漲丈餘，大軍得以魚貫而入，順利攻取赤嵌樓也收復台灣。鄭成功感念媽祖的恩德，於是在鹿耳門建廟，將隨艦媽祖奉祀於廟內，也成了鹿耳門天后宮的最初雛形。但其實鹿耳門天后宮曾在1871年時曾到一場大洪水給沖毀，台江內海也在這些年內逐漸淤積，鹿耳門港成了船隻無法通行的土地，台灣八景之一的「鹿耳連帆」，也就此一去不返，媽祖也在洪水後由爐主輪流供俸，直到1946再次於現址建廟，1977年再次擴建，目前看到的鹿耳門天后宮已是2002年再次斥資建設後的模樣，但不管如何，鹿耳門天后宮的媽祖依然是來往遊客必定進入參拜的聖殿。
+                    </p>
+                    <div id="picture"><img src="img/oldbuildings/05.jpg" alt=""></div>
+                    <P>地址: 708台南市安平區國勝路82號</P>
+                </div>
+            </div>
+
+            <p>
+                臺南，是臺灣最早開發的城市，在300多年的文化薰陶之下，充滿人文韻味的街頭巷尾，吸引旅人一再來訪，走進每一個轉彎處，都有前人駐足的軌跡和隱藏的小故事。循著城門之旅，看見府城城門的發展與演變；古都文化當然少不了重要古蹟、傳統建築及周邊環境風貌，經過空間活化與再造，地方藝術、產業經濟、觀光文化都相映而生；老街古宅則重顯往昔時代，也承載著市井小民的生活空間與記憶，讓這些歷經時代變遷的老故事、新靈魂，與您一起尋探永不退色的臺南魅力。
+            </p>
+
+            <p>　</p>
+            <div role="list" data-role="listview">
+                <li>
+                    <a href="#history" data-transition="slide">台南的歷史小教室
+                        <p>全市文化古蹟遍布，多元文化並存</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#food" data-transition="slide">台南必吃9大美食
+                        <p>多元化、具有在地特色的小吃</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nature" data-transition="slide">台南的自然風光
+                        <p>有著如詩畫般的自然生態美景</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#hotel" data-transition="slide">台南的住宿資訊
+                        <p>飯店推薦與附近的公共運輸</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutus" data-transition="slide">關於我
+                        <p>一些關於作者的小小資訊</p>
+                    </a>
+                </li>
+            </div>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Eric@DCAM</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" id="food">
+        <div data-role="header">
+            <a href="#intro" data-transition="fade"
+                class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>台南必吃9大美食</h1>
+        </div><!-- /header -->
+        <div class="food">
+            <div role="main" class="ui-content">
+                <p>
+                    過去台南曾有一府二鹿三艋舺的美譽，日治時代政經中心轉往台北，安平港也被高雄港取代導致城市發展步調趨緩，惟亦因禍得福，完整的保存了這近四百年來，不論是來自漢人移民帶來的小吃或異文化統治傳入的異國料理，成了飲食文化的大熔爐。這一百多年一路發展下來，逐演變出多元化、具有在地特色的小吃。在日治時代台南大量產糖，糖也成為重要的調味料大量入菜。台南菜系多半放糖當成味精調味提鮮。
+                </p>
+                <h2>牛肉湯．台南的經典滋味</h2>
+                <div id="picture"><img src="img/Tainan/food/01.jpg" alt=""></div>
+                <p>
+                    清晨就已經大排長龍的牛肉湯，是臺南美食的熱門代表，滾燙高湯淋在當天現宰的溫體牛肉，不用多做調味，就是自然美味。
+                </p>
+                <h2>鹹粥．料多味美的早午餐</h2>
+                <div id="picture"><img src="img/Tainan/food/02.jpg" alt=""></div>
+                <p>
+                    人氣的早餐選擇，就是大碗飽足的鹹粥！米粒分明的鹹粥，吃的到口感與湯的鮮甜，每一種口味都有特色。
+                </p>
+                <h2>虱目魚．道地的台南味</h2>
+                <div id="picture"><img src="img/Tainan/food/03.jpg" alt=""></div>
+                <p>
+                    來到號稱是虱目魚故鄉的台南，千萬不能錯過虱目魚的鮮美，煎炒煮炸各種料理方式都適合。
+                </p>
+                <h2>碗粿．南部粿的獨到美好</h2>
+                <div id="picture"><img src="img/Tainan/food/04.jpg" alt=""></div>
+                <p>
+                    北部的碗粿是白色，南部的碗粿則是醬油色。厘語說「阿婆炊粿，倒塌」中間塌陷的碗粿，才是真正的好吃Ｑ彈。
+                </p>
+                <h2>米糕．府城特製的絕配調味</h2>
+                <div id="picture"><img src="img/Tainan/food/05.jpg" alt=""></div>
+                <p>
+                    臺南米食是一絕，想吃進傳統臺南味，米糕就是首選。自製的肉燥、魚鬆、蔥、蒜等，口感香Q又不油膩。
+                </p>
+                <h2>擔仔麵．吃進古早的記憶</h2>
+                <div id="picture"><img src="img/Tainan/food/06.jpg" alt=""></div>
+                <p>
+                    美味的擔仔麺是重現早期臺南人用「擔子」挑著麵攤沿街叫賣、矮爐、矮灶、坐在小竹凳上的傳統記憶。
+                </p>
+                <h2>鱔魚意麵</h2>
+                <div id="picture"><img src="img/Tainan/food/07.jpg" alt=""></div>
+                <p>
+                    好吃在鱔魚意麵關鍵在於肉質和火候，不管是乾炒的清脆彈牙，或是勾芡的鮮甜爽口，來到臺南一嚐絕對可以滿足您對鱔魚意麵的期待。
+                </p>
+                <h2>薑糖番茄</h2>
+                <div id="picture"><img src="img/Tainan/food/08.jpg" alt=""></div>
+                <p>
+                    起源於南台灣，老薑的熱性中和番茄的涼性，是老祖先流傳下來的智慧。在冰果室林立的臺南，餐後來盤薑汁番茄是去油解膩不錯的選擇。
+                </p>
+                <h2>杏仁豆腐</h2>
+                <div id="picture"><img src="img/Tainan/food/09.jpg" alt=""></div>
+                <p>
+                    手工製作的杏仁豆腐，保留杏仁濃郁滋味，低卡低熱量健康又養生，是慢活輕食之最佳選擇。
+                </p>
+            </div>
+        </div>
+        <p>　</p>
+        <div role="list" data-role="listview">
+            <li>
+                <a href="#history" data-transition="slide">台南的歷史小教室
+                    <p>全市文化古蹟遍布，多元文化並存</p>
+                </a>
+            </li>
+            <li>
+                <a href="#oldbuilding" data-transition="slide">台南的古蹟介紹
+                    <p>歷經時代變遷的老建築們</p>
+                </a>
+            </li>
+            <li>
+                <a href="#nature" data-transition="slide">台南的自然風光
+                    <p>有著如詩畫般的自然生態美景</p>
+                </a>
+            </li>
+            <li>
+                <a href="#hotel" data-transition="slide">台南的住宿資訊
+                    <p>飯店推薦與附近的公共運輸</p>
+                </a>
+            </li>
+            <li>
+                <a href="#aboutus" data-transition="slide">關於我
+                    <p>一些關於作者的小小資訊</p>
+                </a>
+            </li>
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Eric@DCAM</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" id="nature">
+        <div data-role="header">
+            <a href="#intro" data-transition="fade"
+                class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>台南的自然風光</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>二寮日出</h2>
+            <p>
+                二寮有著全台灣最低海拔的美麗日出斜射光與白堊地形上的竹林雲霧交會，形成如潑墨國畫般的絕美景象。梅雨季節過後進入夏季型態的雨後天氣隔日就是二寮日出大景的季節，這時段的每天清晨2:00~7:00間，只要晴朗，二寮很難是空無一人的。二寮一直都是夏季日出的攝影聖地，總是在天未亮之前就佔滿了等待日出的遊客及攝影師，從黑暗的星空等到山的那端露出曙光。
+            </p>
+
+            <a href="#sun" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Youtube影片</a>
+            <div data-role="popup" id="sun" class="ui-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J9V_xAO-WTI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="picture"><img src="img/Tainan/nature_sunrise.jpg" alt=""></div>
+
+            <h2>曾文水庫</h2>
+            <p>
+                曾文水庫所在之曾文溪流域全長138.47公里，流域面積1,176平方公里，為台灣第四大河川，其年平均流量為16億立方公尺，壩址位置年平均流量10.64億立方公尺，早期設計嘉南大圳之日本技師八田與一，利用曾文溪支流官田溪上游興建烏山頭水庫，並於大埔溪設置水壩，透過隧道取水至烏山頭水庫供應嘉南地區農田灌溉之用，但是其取水率僅為全部流量的百分之二十五（依據曾文水庫建設誌，曾文水庫建庫前，烏山頭水庫原運用水量為3.3億立方公尺），因此如直接在曾文溪主流大埔溪築壩，並與烏山頭水庫串聯運轉，便可以增加灌溉量，因此之故，於1939年，八田與一便曾建議在現今大壩壩址建築水壩，但因戰事作罷。
+            </p>
+            <p>
+                曾文水庫壩址位於台灣嘉義縣大埔鄉，集水區在嘉義縣大埔鄉境內曾文溪上游大埔溪上，水庫管理局則在臺南市楠西區。為台灣最大的水庫與湖泊，滿水位面積17.14平方公里，其興建之目的主要為提供嘉南地區灌溉用水，另具發電、防洪和觀光的功能，是個多目標利用的水庫。於1967年開始建造，1973年完工。
+            </p>
+
+            <a href="#water" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Youtube影片</a>
+            <div data-role="popup" id="water" class="ui-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EnJvrOuHVdw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="picture"><img src="img/Tainan/nature_water.jpg" alt=""></div>
+
+            <h2>台江國家公園</h2>
+            <p>
+                原名源自18世紀以前台灣西南之潟湖台江內海，唯潟湖在18世紀中葉以後逐漸陸化，潟湖外側的鯤鯓（即沙洲）亦與陸地連為一體，僅餘四草湖、鯤鯓湖與若干濕地等遺蹟，成為重要生物棲息區。另外，台江亦為歷史上數起關鍵事件發生地；例如鄭成功由鹿耳門水道進入內海，出其不意攻擊更早在此殖民的荷蘭人，使臺灣發展為漢人優勢社會。
+            </p>
+            <p>
+                台江國家公園，為中華民國第八座國家公園，也是首座都市型國家公園，2009年12月28日正式掛牌成立。
+                台江一名，源自歷史上的台江內海，多已陸化為濕地或魚塭。範圍包括臺南市安南區與七股區濱海陸域，包含四草、鹿耳門、原安順鹽田周遭、七股潟湖以及海域至澎湖縣東吉嶼。
+            </p>
+
+            <a href="#ocean" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Youtube影片</a>
+            <div data-role="popup" id="ocean" class="ui-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1jHbO-R1HGY" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="picture"><img src="img/Tainan/nature_river.jpg" alt=""></div>
+
+            <p>　</p>
+            <div role="list" data-role="listview">
+                <li>
+                    <a href="#history" data-transition="slide">台南的歷史小教室
+                        <p>全市文化古蹟遍布，多元文化並存</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#oldbuilding" data-transition="slide">台南的古蹟介紹
+                        <p>歷經時代變遷的老建築們</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#food" data-transition="slide">台南必吃9大美食
+                        <p>多元化、具有在地特色的小吃</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#hotel" data-transition="slide">台南的住宿資訊
+                        <p>飯店推薦與附近的公共運輸</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutus" data-transition="slide">關於我
+                        <p>一些關於作者的小小資訊</p>
+                    </a>
+                </li>
+            </div>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Eric@DCAM</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" id="hotel">
+        <div data-role="header">
+            <a href="#intro" data-transition="fade"
+                class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <h1>台南飯店推薦</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>台南飯店推薦</h2>
+            <div id="hotel">
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                        <h3>桂田酒店</h3>
+                        <p>
+                            桂田酒店Queena Plaza Hotel座落於台南市永康區，鄰近南科，距永康交流道只需3分鐘車程，便利的交通是商務
+                            人士及觀光旅人最佳選擇，亦是新台南市首座度假型酒店。飯店於2007年正式成立，融合商務、休閒等多功能設施 服務。
+                        </p>
+                        <h3>地址：710台南市永康區永安一街99號</h3>
+                        <h3>附近公共運輸: 5號公車</h3>
+                        <div class="link">
+                            <a href="https://www.queenaplaza.com/tainan/about_queena"
+                                class="ui-btn ui-btn-inline ui-mini">前往桂田酒店官網</a>
+                        </div>
+                        <div id="picture">
+                            <img src="img/hotel/01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>台南晶英酒店</h3>
+                        <p>
+                            台南晶英酒店座落於台南市中西區，為晶華國際酒店集團旗下之國際級商務度假酒店。鄰近新光三越與小西門商圈，步行可抵城市內的古蹟景點，擁有豐富歷史典藏、蘊含人文風貌、商業機能完善之特色；車行30分鐘可至台南高鐵站與台南科學園區，交通便利，兼具商務與休閒度假的環境與功能。台南晶英酒店相信『現代且雋永』，將台南儒風意象化為設計元素，運用閩式建築特色妝點空間，走入飯店皆是藏於細節中的心意。
+                        </p>
+                        <h3>地址：700台南市中西區和意路1號</h3>
+                        <h3>附近公共運輸: 1、2、5、10、11、18號公車</h3>
+                        <div class="link">
+                            <a href="https://tainan.silksplace.com/tw/"
+                                class="ui-btn ui-btn-inline ui-mini">前往台南晶英酒店官網</a>
+                        </div>
+                        <div id="picture">
+                            <img src="img/hotel/02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>大員皇冠假日酒店</h3>
+                        <p>
+                            台南大員皇冠假日酒店位於自然生態與歷史人文古蹟所在地-安平，地理位置得天獨厚，坐落在鹽水溪出海口附近，緊鄰13公頃的湖濱水鳥公園、正對著海陸域總面積達39,310公頃的台江國家公園，坐擁無敵海景與生態綠廊，不僅生態資源豐富之外，安平夕陽第一美景近在咫尺。酒店佔地面積約1.5萬平方米(4,500多坪)，由IHG洲際酒店集團管理，隸屬於大員開發事業股份有限公司-台南分公司。
+                        </p>
+                        <h3>70841台南市安平區州平路289號</h3>
+                        <h3>附近公共運輸: 2號公車</h3>
+                        <div class="link">
+                            <a href="https://www.crowneplazatainan.com/"
+                                class="ui-btn ui-btn-inline ui-mini">前往大員皇冠假日酒店官網</a>
+                        </div>
+                        <div id="picture">
+                            <img src="img/hotel/03.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>台南特色民宿</h2>
+            <div id="hotel">
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                        <h3>ひさと庵‧久都。和宅</h3>
+                        <p>台南之於台灣,就如同京都之於日本,都是一個國家中深具人文以及歷史記憶的城市,在台南更是有許多這一類的建築,位在台南市忠孝街(PS:總鋪師拍攝地點)，巷弄裡還留有著許多日本在台時代就存在的老屋,甚至還保有著一排房屋需共用著中間獨立的廁所及洗澡間的群居房舍,這些房舍有著古老的磚瓦,木造的樑柱及樓層板,台檜製成的老窗戶及老木梯,雖有些已是半毀的建築,但是部分還住著樸實的台南居民,在巷弄間閒聊著彼此的生活。
+                        </p>
+                        <h3>地址：台南市中西區海安路附近</h3>
+                        <h3>附近公共運輸 :77、88號公車</h3>
+                        <div class="link">
+                            <a href="https://hisatoan.wixsite.com/fall"
+                                class="ui-btn ui-btn-inline ui-mini">前往ひさと庵‧久都。和宅官網</a>
+                        </div>
+                        <div id="picture">
+                            <img src="img/hotel/04.jpg" alt="">
+                        </div>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>謝宅</h3>
+                        <p>府城 西市場 謝宅 長久以來總是希望更多朋友能夠用最在地的方式融入台南，愛上台南，搬來台南，所以成立這個平台來分享關於我們在台南的生活、美食、建築、一切。
+                        </p>
+                        <h3>地址：台南中西區西門市場1號</h3>
+                        <h3>附近公共運輸 :77、88號公車</h3>
+                        <div class="link">
+                            <a href="https://www.facebook.com/TainanOldHouseInn/"
+                                class="ui-btn ui-btn-inline ui-mini">前往謝宅FB粉專</a>
+                        </div>
+                        <div id="picture">
+                            <img src="img/hotel/05.jpg" alt="">
+                        </div>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>有方公寓</h3>
+                        <p>有方公寓想呈現的法式風格不是大家印象中路易十四時期的雕飾奢華，也不是拿破崙三世巴黎歌劇院的大派氣勢，當然也不想落入只是印花和溫馨杯盤的法式鄉村。我們欣賞法國現代家居思考裡的隨性和包容，混和了簡化的法式元素，再加了現在巴黎人喜愛的紐約
+                            loft 風，和些許 60 年代的歐式復古。他們其實也愛慕東方元素，而且總能巧妙的轉化出依舊有濃濃法國氛圍的東西混融。
+                        </p>
+                        <h3>地址：台南市中西區海安路二段269巷9號</h3>
+                        <h3>附近公共運輸 :T-Bike 海安民族站</h3>
+                        <div class="link">
+                            <a href="https://www.trip235.com/index.php"
+                                class="ui-btn ui-btn-inline ui-mini">前往有方公寓官網</a>
+                        </div>
+                        <div id="picture">
+                            <img src="img/hotel/06.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>　</p>
+            <div role="list" data-role="listview">
+                <li>
+                    <a href="#history" data-transition="slide">台南的歷史小教室
+                        <p>全市文化古蹟遍布，多元文化並存</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#oldbuilding" data-transition="slide">台南的古蹟介紹
+                        <p>歷經時代變遷的老建築們</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#food" data-transition="slide">台南必吃9大美食
+                        <p>多元化、具有在地特色的小吃</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nature" data-transition="slide">台南的自然風光
+                        <p>有著如詩畫般的自然生態美景</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutus" data-transition="slide">關於我
+                        <p>一些關於作者的小小資訊</p>
+                    </a>
+                </li>
+            </div>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Eric@DCAM</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" data-dialog="true" id="aboutus">
+        <div data-role="header">
+            <h1>About Me</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>Welcaome To My Introduction 😀😀</h2>
+            <p>DCAM-2年級B班 1108211093 楊尚嶧</p>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Eric@DCAM</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+</body>
+
+</html>
